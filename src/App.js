@@ -1,13 +1,22 @@
 import "./App.css";
 import Weather from "./Weather";
+import Format from "./Format";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import "bootstrap/dist/css/bootstrap.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Weather App</h1>
-      <Weather />
-    </div>
+    <Container maxWidth="sm">
+      <Typography
+        component="div"
+        style={{ backgroundColor: `Pink`, height: `100vh` }}
+      >
+        <Weather />
+        <Format />
+      </Typography>
+    </Container>
   );
-}
+};
 
 export default App;

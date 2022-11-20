@@ -16,6 +16,7 @@ export default function Weather() {
 
   function showWeather(response) {
     setWeather({
+      name: response.data.main.name,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
@@ -51,7 +52,7 @@ export default function Weather() {
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}km/h</li>
           <li>
-            <img alt="icon" src={weather.icon} />{" "}
+            <img alt="icon" src={weather.icon} />
           </li>
         </ul>
       </div>
