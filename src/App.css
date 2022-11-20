@@ -1,5 +1,25 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   text-align: center;
+}
+
+.App::before {
+  content: "";
+  background: url(./img/pexels-dmitriymir-11107918.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 ul {

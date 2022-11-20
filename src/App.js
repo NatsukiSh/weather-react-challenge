@@ -1,22 +1,34 @@
 import "./App.css";
 import Weather from "./Weather";
-import Format from "./Format";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
 import "bootstrap/dist/css/bootstrap.css";
 
-const App = () => {
+function App() {
   return (
-    <Container maxWidth="sm">
-      <Typography
-        component="div"
-        style={{ backgroundColor: `Pink`, height: `100vh` }}
-      >
-        <Weather />
-        <Format />
-      </Typography>
-    </Container>
+    <div className="App">
+      <div className="container">
+        <Weather defautCity="Hattingen" />
+        <footer className="text-center">
+          <a
+            href="https://github.com/NatsukiSh/weather-react-challenge"
+            target="_blank"
+            rel="noreferrer"
+            className="text-decoration-none"
+          >
+            Open-source code,
+          </a>
+          by
+          <a
+            href="https://app.netlify.com/sites/funny-beignet-7cc5ec/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-decoration-none"
+          >
+            Natsuki Shuko
+          </a>
+        </footer>
+      </div>
+    </div>
   );
-};
+}
 
 export default App;
