@@ -1,0 +1,10 @@
+.weather-forecast-temperature-max {
+  font-size: 13px;
+  color: white;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+  font-size: 13px;
+  color: black;
+}

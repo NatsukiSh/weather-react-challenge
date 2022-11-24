@@ -6,7 +6,13 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defautCity="Hattingen" />
+        <div className="row">
+          <div className="weather-app-wrapper">
+            <div className="weather-app">
+              <Weather />
+            </div>
+          </div>
+        </div>
         <footer className="text-center">
           <a
             href="https://github.com/NatsukiSh/weather-react-challenge"
