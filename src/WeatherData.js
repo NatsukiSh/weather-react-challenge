@@ -1,6 +1,7 @@
 import React from "react";
 import Format from "./Format";
 import Temperature from "./Temperature";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherData(props) {
   return (
@@ -23,11 +24,7 @@ export default function WeatherData(props) {
       <div className="row">
         <div className="col-6">
           <div className="d-flex weather-temperature">
-            <img
-              src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
-              alt="Clear"
-            />
-            {props.data.icon}
+            <WeatherIcon src={`${props.data.weather[0].icon}`} alt="Clear" />
             <div>
               <strong>{Math.round(props.data.temperature)}</strong>
               <span className="weather-temperature-unit">°C</span>
@@ -44,8 +41,8 @@ export default function WeatherData(props) {
       <div className="col-3">
         <div className="weather-forecast">
           <p className="info text-capitalize">{props.data.description}</p>
-          <img
-            src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          <WeatherIcon
+            src={`${props.data.weather[0].icon}`}
             alt={props.data.description}
             width="100px"
           />
