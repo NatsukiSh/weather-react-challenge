@@ -24,7 +24,7 @@ export default function WeatherData(props) {
         <div className="col-6">
           <div className="d-flex weather-temperature">
             <img
-              src="http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png"
+              src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
               alt="Clear"
             />
             {props.data.icon}
@@ -45,7 +45,7 @@ export default function WeatherData(props) {
         <div className="weather-forecast">
           <p className="info text-capitalize">{props.data.description}</p>
           <img
-            src="http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png"
+            src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
             alt={props.data.description}
             width="100px"
           />
