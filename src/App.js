@@ -9,7 +9,7 @@ function App() {
         <div className="row">
           <div className="weather-app-wrapper">
             <div className="weather-app">
-              <Weather />
+              <Weather defaultCity="London" />
             </div>
           </div>
         </div>
