@@ -9,7 +9,7 @@
   content: "";
   background: url(./img/pexels-dmitriymir-11107918.jpg) no-repeat center
     center/cover;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -18,20 +18,16 @@
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.3);
   margin: 30px auto;
+  max-width: 600px;
+  padding-top: 60px;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid#dadde1;
   border-radius: 5px;
-}
-
-.container {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
 }
 
 ul {

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherData from "./WeatherData";
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
-  const [city, setCity] = useState(props.defaltCity);
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setWeather({
@@ -25,7 +26,7 @@ export default function Weather(props) {
   }
 
   function handleSubmit(event) {
-    event.preventDefalt();
+    event.preventDefault();
     search();
   }
 
@@ -42,7 +43,7 @@ export default function Weather(props) {
         <div className="searchForm">
           <div className="row">
             <form onSubmit={handleSubmit}>
-              <div className="col-9">
+              <div className="col-6">
                 <input
                   type="search"
                   placefolder="Type a city..."
@@ -51,8 +52,8 @@ export default function Weather(props) {
                   onChange={updateCity}
                 />
               </div>
-              <div className="col-3">
-                <input type="submit" value="Search" />
+              <div className="col-6">
+                <input type="submit" value="Search" className="search-button" />
               </div>
             </form>
           </div>
