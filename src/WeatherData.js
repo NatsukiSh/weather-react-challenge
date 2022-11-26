@@ -9,14 +9,16 @@ export default function WeatherData(props) {
       <div className="row">
         <div className="overview">
           <h1 className="text-left">{props.data.city}</h1>
-          <Format date={props.data.date} />
         </div>
         <div className="col-md-4">
           <Temperature celcius={props.data.temperature} />
         </div>
         <ul>
           <li>
-            Last updated:<span>{props.data.date}</span>
+            Last updated:
+            <span>
+              <Format date={props.data.date} />
+            </span>
           </li>
           <li>{props.data.description}</li>
         </ul>
@@ -24,7 +26,7 @@ export default function WeatherData(props) {
       <div className="row">
         <div className="col-6">
           <div className="d-flex weather-temperature">
-            <WeatherIcon src={`${props.data.weather[0].icon}`} alt="Clear" />
+            <WeatherIcon icon={props.data.icon} size={50} />
             <div>
               <strong>{Math.round(props.data.temperature)}</strong>
               <span className="weather-temperature-unit">°C</span>
@@ -41,11 +43,6 @@ export default function WeatherData(props) {
       <div className="col-3">
         <div className="weather-forecast">
           <p className="info text-capitalize">{props.data.description}</p>
-          <WeatherIcon
-            src={`${props.data.weather[0].icon}`}
-            alt={props.data.description}
-            width="100px"
-          />
         </div>
       </div>
     </div>

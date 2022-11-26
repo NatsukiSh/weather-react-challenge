@@ -1,27 +1,34 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactAnimatedWeather from "react-animated-weather/build/ReactAnimatedWeather";
-import propTypes from "prop-types";
 
-export default class WeatherIcon extends Component() {
-  static propTypes = {
-    icon: propTypes.oneOf([
-      `CLEAR_DAY`,
-      `CLEAR_NIGHT`,
-      `PARTLY_CLOUDY_DAY`,
-      `PARTLY_CLOUDY_NIGHT`,
-      `CLOUDY`,
-      `RAIN`,
-      `SLEET`,
-      `SNOW`,
-      `WIND`,
-      `FOG`,
-    ]).isRequired,
-    animate: propTypes.bool,
-    size: propTypes.number,
-    color: propTypes.string,
+export default function WeatherIcon(props) {
+  const codeMapping = {
+    "01d": "CLEAR_DAY",
+    "01n": "CLEAR_NIGHT",
+    "02d": "PARTLY_CLOUDY_DAY",
+    "02n": "PARTLY_CLOUDY_NIGHT",
+    "03d": "CLOUDY",
+    "03n": "CLOUDY",
+    "04d": "CLOUDY",
+    "04n": "CLOUDY",
+    "09d": "RAIN",
+    "09n": "RAIN",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "RAIN",
+    "11n": "RAIN",
+    "13d": "SNOW",
+    "13n": "SNOW",
+    "50d": "FOG",
+    "50n": "FOG",
   };
 
-  return() {
-    <ReactAnimatedWeather animate={true} size={16} color="#444343" />;
-  }
+  return (
+    <ReactAnimatedWeather
+      icon={codeMapping[props.icon]}
+      animate={true}
+      size={props.size}
+      color="#444343"
+    />
+  );
 }
