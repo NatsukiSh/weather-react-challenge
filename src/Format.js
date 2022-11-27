@@ -1,4 +1,5 @@
 import React from "react";
+import "./Format.css";
 
 export default function Format(props) {
   let days = [
@@ -10,6 +11,7 @@ export default function Format(props) {
     "Friday",
     "Saturday",
   ];
+
   let day = days[props.date.getDay()];
   let hours = days[props.date.getHours()];
   if (hours < 10) {
@@ -19,9 +21,10 @@ export default function Format(props) {
   if (minutes < 10) {
     minutes = `0&{minutes}`;
   }
+
   return (
-    <>
+    <div>
       {day} {hours}:{minutes}
-    </>
+    </div>
   );
 }
