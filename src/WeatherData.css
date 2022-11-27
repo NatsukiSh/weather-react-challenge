@@ -21,12 +21,6 @@ span {
   top: -70px;
 }
 
-ul.details {
-  display: flex;
-  position: relative;
-  top: 20px;
-}
-
 li {
   color: white;
   font-size: 16px;
@@ -49,7 +43,7 @@ div.col-6 {
   display: fixed;
   position: relative;
   left: -100px;
-  top: -40px;
+  top: -80px;
 }
 
 #details {
@@ -78,14 +72,13 @@ div.d-flex.weather-temperature {
 @media (max-width: 900px) {
   #icon {
     display: fixed;
-    position: relative;
-    left: -75px;
-    top: -90px;
+    left: -95px;
+    top: -95px;
   }
 
   #details {
     display: fixed;
     position: relative;
-    top: 10px;
+    top: -30px;
   }
 }

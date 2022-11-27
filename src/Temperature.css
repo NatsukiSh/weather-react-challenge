@@ -3,27 +3,24 @@ h1.temp {
   display: flex;
   position: relative;
   left: -110px;
-  top: 30px;
+  top: -20px;
 }
 
-small {
-  position: relative;
+small.units {
   font-size: 16px;
-  top: 10px;
+  top: 40px;
   left: 2px;
 }
 
 @media (max-width: 900px) {
   h1.temp {
     font-size: 64px;
-    display: flex;
-    position: relative;
-    left: 80px;
-    top: -20px;
+    display: fixed;
+    left: -105px;
+    top: -30px;
   }
 
-  small {
-    position: relative;
+  small.units {
     font-size: 16px;
     top: 10px;
     left: 2px;

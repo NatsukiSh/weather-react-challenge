@@ -6,7 +6,7 @@ export default function Temperature(props) {
     <div className="Temperature">
       <h1 className="temp">
         {Math.round(props.celcius)}
-        <small>°C</small>
+        <small className="units">°C</small>
       </h1>
     </div>
   );

@@ -3,6 +3,7 @@ import Format from "./Format";
 import Temperature from "./Temperature";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherData.css";
+import ForecastDay from "./ForecastDay";
 
 export default function WeatherData(props) {
   return (
@@ -37,7 +38,9 @@ export default function WeatherData(props) {
         </div>
       </div>
       <div className="col-3">
-        <div className="weather-forecast"></div>
+        <div className="weather-forecast">
+          <ForecastDay />
+        </div>
       </div>
     </div>
   );
