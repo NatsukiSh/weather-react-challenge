@@ -5,7 +5,7 @@ h2 {
   display: flex;
   position: relative;
   top: -50px;
-  font-size: 35px;
+  font-size: 64px;
   color: white;
 }
 
@@ -19,6 +19,7 @@ span {
   display: flex;
   position: relative;
   top: -70px;
+  text-transform: capitalize;
 }
 
 li {

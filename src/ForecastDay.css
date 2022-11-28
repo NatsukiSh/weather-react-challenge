@@ -1,9 +1,9 @@
-.weather-forecast-temperature-max {
+.forecast-temperature-max {
   font-size: 13px;
   color: white;
 }
 
-.weather-forecast-temperature-min {
+.forecast-temperature-min {
   opacity: 0.5;
   font-size: 13px;
   color: black;

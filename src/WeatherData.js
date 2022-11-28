@@ -36,9 +36,7 @@ export default function WeatherData(props) {
           </ul>
         </div>
       </div>
-      <div className="col-3">
-        <div className="weather-forecast"></div>
-      </div>
+      <div className="weather-forecast"></div>
     </div>
   );
 }
