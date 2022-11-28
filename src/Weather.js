@@ -3,6 +3,7 @@ import axios from "axios";
 import WeatherData from "./WeatherData";
 import "./Weather.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
@@ -72,6 +73,7 @@ export default function Weather(props) {
           </div>
         </div>
         <WeatherData data={weather} />
+        <Forecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
