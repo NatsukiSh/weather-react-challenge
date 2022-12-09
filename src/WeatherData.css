@@ -71,10 +71,16 @@ div.d-flex.weather-temperature {
 }
 
 @media (max-width: 900px) {
+  h1.temp {
+    display: fixed;
+    left: 90px;
+    top: -60px;
+  }
+
   #icon {
     display: fixed;
-    left: -95px;
-    top: -95px;
+    left: -60px;
+    top: -120px;
   }
 
   #details {

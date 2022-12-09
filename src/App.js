@@ -19,15 +19,26 @@ function App() {
             className="text-decoration-none"
           >
             Open-source code,
-          </a>
+          </a>{" "}
           by
           <a
-            href="https://app.netlify.com/sites/funny-beignet-7cc5ec/"
+            href="https://www.linkedin.com/in/natsuki-shuko-81890a1b0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9zoyVn2aSdeGDCR4Hz6LIw%3D%3D"
             target="_blank"
             rel="noreferrer"
             className="text-decoration-none"
           >
+            {" "}
             Natsuki Shuko
+          </a>{" "}
+          on
+          <a
+            href="https://funny-beignet-7cc5ec.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-decoration-none"
+          >
+            {" "}
+            Netlify
           </a>
         </footer>
       </div>
