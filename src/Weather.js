@@ -60,14 +60,6 @@ export default function Weather(props) {
                   value="Search"
                   className="search-button btn btn-primary"
                 />
-                <span>
-                  <input
-                    type="button"
-                    value="Current"
-                    className="current-button btn
-                  btn-success"
-                  />
-                </span>
               </div>
             </form>
           </div>

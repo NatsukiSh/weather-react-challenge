@@ -1,9 +1,9 @@
-h1.temp {
+.temp {
   font-size: 64px;
   display: flex;
   position: relative;
   left: -110px;
-  top: -20px;
+  top: 20px;
 }
 
 small.units {
@@ -13,16 +13,16 @@ small.units {
 }
 
 @media (max-width: 900px) {
-  h1.temp {
+  .temp {
     font-size: 64px;
     display: fixed;
     left: -105px;
-    top: -30px;
+    top: 20px;
   }
 
   small.units {
     font-size: 16px;
-    top: 10px;
+    top: -10px;
     left: 2px;
   }
 }
